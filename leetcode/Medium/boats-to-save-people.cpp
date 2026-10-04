@@ -4,23 +4,30 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/boats-to-save-people/
-// Solved on: 2026-10-04T13:53:29.757Z
+// Solved on: 2026-10-04T14:12:45.364Z
 
 class Solution {
 public:
     int numRescueBoats(vector<int>& people, int limit) {
         int n = people.size();
         sort(people.begin(), people.end());
-        int i = 0, j = n - 1, sum = 0;
-        while (i <= j) {
-            if (i<j && people[i] + people[j] <= limit) {
-                i++;
+        int i =0,j=n-1,sum=0;
+        while (i<=j){
+            if(people[j]>=limit){
+                sum++;
                 j--;
             }
             else{
-                j--;
+                if(people[i]+people[j]<=limit){
+                    sum++;
+                    i++;
+                    j--;
+                }
+                else{
+                    sum++;
+                    j--;
+                }
             }
-            sum++;
         }
         return sum;
     }
