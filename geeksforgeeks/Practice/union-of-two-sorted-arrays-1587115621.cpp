@@ -3,19 +3,26 @@
 // Language: unknown
 // Verdict: Accepted
 // URL: https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
-// Solved on: 2026-10-04T14:34:50.335Z
+// Solved on: 2026-10-05T15:49:44.703Z
 
 class Solution {
   public:
     vector<int> findUnion(vector<int> &a, vector<int> &b) {
-        int m=a.size(),n=b.size();
-        vector<int>c(m+n);
-            for(int i=0;i<m+n;i++){
-                if(i<m) c[i]=a[i];
-                else c[i]=b[i-m];
+        int m=a.size();
+        int n=b.size();
+        vector<int> c;
+        vector<int> d;
+        for(int i=0;i<m+n;i++){
+            if(i<m) c.push_back(a[i]);
+            else c.push_back(b[i-m]);
+        }
+        sort(c.begin(),c.end());
+        for(int i=0;i<m+n;i++){
+            if(c[i]<c[i+1] || i==m+n-1) d.push_back(c[i]);
+            else{
+                continue;
             }
-            sort(c.begin(),c.end());
-            c.erase(unique(c.begin(), c.end()), c.end());
-        return c;
+        }
+        return d;
     }
 };
