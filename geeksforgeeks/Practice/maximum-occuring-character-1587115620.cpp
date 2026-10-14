@@ -3,14 +3,13 @@
 // Language: unknown
 // Verdict: Accepted
 // URL: https://www.geeksforgeeks.org/problems/maximum-occuring-character-1587115620/1
-// Solved on: 2026-10-14T10:55:27.204Z
+// Solved on: 2026-10-14T11:02:19.462Z
 
 class Solution {
   public:
     char getMaxOccuringChar(string& s) {
         vector<int> v(26,0);
         int n=s.size();
-        sort(s.begin(),s.end());
         for(int i=0;i<n;i++){
             int x=s[i]-'a';
             v[x]=v[x]+1;
