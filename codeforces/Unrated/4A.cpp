@@ -8,16 +8,10 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int t;
-    cin>>t;
-    while(t--){
-    int a,b,c;
-    cin>>a;
-    cin>>b;
-    cin>>c;
-    if(a+b>=10 || b+c>=10 || a+c>=10){
-            cout<<"YES"<<endl;
+    int w;
+    cin>>w;
+    if(w%2==0 && w>2){
+            cout<<"YES";
     }
-    else cout<<"NO"<<endl;
-    }
+    else cout<<"NO";
 }
