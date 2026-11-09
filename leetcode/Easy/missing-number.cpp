@@ -4,7 +4,7 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/missing-number/
-// Solved on: 2026-09-20T11:22:16.465Z
+// Solved on: 2026-11-09T06:18:02.832Z
 
 class Solution {
 public:
