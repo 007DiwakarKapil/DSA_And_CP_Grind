@@ -4,17 +4,14 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/move-zeroes/
-// Solved on: 2026-11-09T11:16:03.115Z
+// Solved on: 2026-11-09T11:21:33.123Z
 
 class Solution {
 public:
-    void moveZeroes(vector<int>& arr) {
-        int n=arr.size();
-        for(int j=0;j<n-1;j++){
-            for(int i=0;i<n-1;i++){
-                if(arr[i]==0){
-                    swap(arr[i],arr[i+1]);
-                }
+    void moveZeroes(vector<int>& nums) {
+        for(int i=0;i<nums.size();i++){
+            for(int j=0;j<nums.size()-1;j++){
+                if(nums[j]==0) swap(nums[j],nums[j+1]);
             }
         }
     }
