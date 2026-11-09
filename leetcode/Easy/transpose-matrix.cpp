@@ -4,17 +4,17 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/transpose-matrix/
-// Solved on: 2026-11-09T13:59:18.245Z
+// Solved on: 2026-11-09T14:03:04.509Z
 
 class Solution {
 public:
     vector<vector<int>> transpose(vector<vector<int>>& matrix) {
-        int r= matrix.size();
-        int c= matrix[0].size();
-       vector<vector<int>> result(c, vector<int>(r, 0));
-        for(int i=0;i<r;i++){
-            for(int j=0;j<c;j++){
-               result[j][i]=matrix[i][j];
+        int row=matrix.size();
+        int column=matrix[0].size();
+        vector<vector<int>> result(column, vector<int>(row, 0));
+        for(int i=0;i<row;i++){
+            for(int j=0;j<column;j++){
+                result[j][i]=matrix[i][j];
             }
         }
         return result;
