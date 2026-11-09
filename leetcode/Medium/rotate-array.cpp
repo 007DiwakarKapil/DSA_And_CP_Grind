@@ -4,15 +4,17 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/rotate-array/
-// Solved on: 2026-09-20T05:29:29.267Z
+// Solved on: 2026-11-09T06:44:02.177Z
 
 class Solution {
 public:
-    void rotate(vector<int>& nums, int k) {
-        int n=nums.size();
-        k=k%n;
-        reverse(nums.begin(), nums.end());
-        reverse(nums.begin(), nums.begin() + k);
-        reverse(nums.begin() + k, nums.end());
+    void rotate(vector<int>& arr, int k) {
+        int n = arr.size();
+        if (n <= 1) return; 
+        k = k % n;
+        if (k < 0) k += n;
+        reverse(arr.begin(),arr.end());
+        reverse(arr.begin(),arr.begin()+k);
+        reverse(arr.begin()+k,arr.end());
     }
 };
