@@ -4,7 +4,7 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/arranging-coins/
-// Solved on: 2026-11-10T15:21:03.568Z
+// Solved on: 2026-11-10T15:22:07.625Z
 
 class Solution {
 public:
