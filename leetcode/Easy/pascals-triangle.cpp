@@ -4,7 +4,7 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/pascals-triangle/
-// Solved on: 2026-09-26T07:15:33.328Z
+// Solved on: 2026-11-11T07:42:48.408Z
 
 class Solution {
 public:
