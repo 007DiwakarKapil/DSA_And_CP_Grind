@@ -4,7 +4,7 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/find-all-duplicates-in-an-array/
-// Solved on: 2026-11-13T16:45:56.577Z
+// Solved on: 2026-11-16T13:59:17.167Z
 
 class Solution {
 public:
@@ -14,7 +14,6 @@ public:
         for(int i=0;i<nums.size()-1;i++){
             if(nums[i]==nums[i+1]){
                 v.push_back(nums[i]);
-                continue;
         }
         }
         return v;
