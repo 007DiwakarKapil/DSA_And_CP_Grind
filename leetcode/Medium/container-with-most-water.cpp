@@ -4,7 +4,7 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/container-with-most-water/
-// Solved on: 2026-10-05T15:09:23.150Z
+// Solved on: 2026-11-17T17:52:34.342Z
 
 class Solution {
 public:
