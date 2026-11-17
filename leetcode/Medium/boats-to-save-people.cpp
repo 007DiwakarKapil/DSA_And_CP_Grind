@@ -4,7 +4,7 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/boats-to-save-people/
-// Solved on: 2026-10-04T14:12:45.364Z
+// Solved on: 2026-11-17T17:40:24.204Z
 
 class Solution {
 public:
