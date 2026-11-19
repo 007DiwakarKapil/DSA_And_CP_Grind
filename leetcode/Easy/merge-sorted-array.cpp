@@ -4,7 +4,7 @@
 // Language: cpp
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/merge-sorted-array/
-// Solved on: 2026-09-23T16:32:45.398Z
+// Solved on: 2026-11-19T17:31:27.736Z
 
 class Solution {
 public:
